@@ -1,0 +1,16 @@
+* {
+    box-sizing: border-box;
+}
+div {
+    width: 400px;
+    border: 50px rgb(66, 0, 128) solid;
+    padding: 50px;
+}
+
+p {
+    background-color: gray;
+    color: rgb(0, 55, 255);
+    padding: 20px;
+    size: 30px;
+    text-align: center;
+}

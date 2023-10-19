@@ -1,0 +1,39 @@
+body {
+    margin-left: 10px;
+}
+
+h1 {
+    padding-bottom: 5px;
+    /* padding-top: 15px; */
+    /* margin-top: 20px; */
+}
+
+ul li {
+    margin-left: 1px;
+    margin-top: 5px;
+}
+
+
+/* h2 {
+    padding-bottom: 10px;
+} */
+
+h3 {
+    /* border-style: none solid none none; */
+    margin-top: 15px;
+    border-bottom: solid 1px;
+}
+
+h2 {
+    padding-top: 15px;
+}
+
+h2 ul {
+    padding-top: 1000px;
+}
+
+
+/* .ngay {
+    margin-top: 0px;
+    padding-top: 0px;
+} */

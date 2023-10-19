@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="demoform.css">
+</head>
+<body>
+        <form action="">
+        <div>
+            <label for="fname">Ho va ten:<label>
+            <input class="name-phone" type="text" id="fname">
+        </div>
+        <div>
+            <label for="fphone"> So dien thoai:</label>
+            <input class="name-phone" type="number" id="fphone">
+        </div>
+        <div>
+            <label for="fphone">Email:<label>
+            <input type="Email" id="fphone">
+        </div>
+        <div> 
+            <label for="fpass">Mat khau<label>
+            <input type="password" id="fpass">
+        </div>
+        <div>
+            <label for=""><b>Gioi tinh:</b></label> <br>
+            <input type="radio" name="gender" value="1" checked> Male
+            <input type="radio" name="gender" value="2" checked> Female
+            <input type="radio" name="gender" value="0" checked> Other
+        </div>
+        <div>
+            <label for=""><b>Hoc van:</b></label> <br>
+            <input type="radio" name="uni" value="1" checked> Dai hoc
+            <input type="radio" name="uni" value="2" checked> THPT
+            <input type="radio" name="uni" value="0" checked> Other
+        </div>
+        <div id="style">
+            <label for=""><b>Chu de quan tam:</b></label> <br>
+            <input type="checkbox" name="type" value="1" checked> Phan mem
+            <input type="checkbox" name="type" value="2" checked> Tai chinh
+            <input type="checkbox" name="type" value="3" checked> Kinh doanh
+            <input type="checkbox" name="type" value="4" checked> BDS
+            <input type="checkbox" name="type" value="5" checked> Other
+        </div>
+        <div id="style">
+            <label for=""><b>Thanh pho:</b></label>
+            <select name="" id="">
+                <option value="HN">Ha Noi</option>
+                <option value="HP">Hai Phong</option>
+                <option value="DN">Da Nang</option>
+                <option value="HUE">Hue</option>
+                <option value="HCM">Ho Chi Minh</option>
+            </select>
+        </div>
+        <div>
+            <label for="" style="vertical-align:top;"><b>Y kien rieng</b></label>
+            <textarea name="" id="" cols="30" rows="5"></textarea>
+        </div>
+            <!-- <input type="submit" value="Dang ky"> -->
+            <button type="submit">Dang ky</button>
+            <button type="reset">Xoa</button>
+    </form>       
+</body>
+</html>

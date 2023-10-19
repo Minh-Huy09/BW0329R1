@@ -1,0 +1,12 @@
+form {
+    background-color: rgb(237, 245, 179);
+    border: 1px solid;
+    }      
+
+    #style {
+        border: 1px solid;    
+    }
+    
+    textarea, input {
+        color: rgb(136, 0, 255);   
+    }
