@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Icons/themify-icons-font/themify-icons/themify-icons.css">
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    html {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .header-search {
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-size: 10px;
+    }
+    .head {
+        height: 60px;
+        background-color: rgb(14, 14, 126);
+        width: 100%;
+    }
+    .Logo {
+        background-color: rgb(14, 14, 126);
+        float: left;
+        box-sizing: border-box;
+        width: 40%;
+        padding-left: 80px;
+    }
+    .menu1 {
+        color: white;
+        background-color: rgb(14, 14, 111);
+        list-style: none;
+        width: 100%;
+        height: 60px;
+        line-height: 60px;
+    }
+    .menu1_first_child .menu1-icon {
+        font-size: 10px;
+    }
+    
+    .menu1>li {
+        display: inline;
+        padding: 5px;
+    }
+    .menu1_first_child:hover .menu2 {
+        display: block;
+    }
+    .menu1_first_child {
+        position: relative;
+    }
+    .menu2 {
+        color: white;
+        background-color: rgb(14, 14, 111);
+        display: none;
+        list-style-type: none;
+        position: absolute;
+        top: 45px;
+        left: 1px;
+        width: 200px;
+        text-align: center;
+    }
+    .menu2::after {
+        content: "";
+        display: block;
+        width: 96px;
+        height: 56px;
+        top: -30px;
+        left: -9px;
+        position: absolute;
+    }
+    .menu2_last_child {
+        position: relative;
+    }
+   .menu2_last_child:hover .menu3 {
+        display: block;
+    }
+    .menu3 {
+        display: none;
+        position: absolute;
+        color: aliceblue;
+        top: -40px;
+        left: 200px;
+        background-color: rgb(14, 14, 111);
+        width: 200px;
+        text-align: center;
+        list-style-type: none;
+        cursor: pointer;
+        text-align: center;
+    }
+     
+</style>
+<body>
+    <div class="head">
+        <div class="Logo">
+            <img src="https://cdn.codegym.vn/wp-content/uploads/2021/08/CodeGym-Logo.webp" alt="">
+        </div>
+        <div>
+<ul class="menu1">
+    <li class="menu1_first_child">Khóa học
+        <i class="menu1-icon ti-angle-down"></i>
+        <ul class="menu2">
+            <li><a style="text-decoration: none; color: white;" href="https://daihoc.codegym.vn/">Kĩ sư CNTT - Đại học</a></li>
+            <li><a style="text-decoration: none; color: white;" href="https://codegym.vn/tong-hop-khoa-hoc-tai-codegym/?action=filter_courses&times%5B%5D=fulltime">Bootcamp Full time</a></li>
+            <li><a style="text-decoration: none; color: white;" href="https://codegym.vn/tong-hop-khoa-hoc-tai-codegym/?action=filter_courses&times%5B%5D=hoc-lap-trinh-parttime">Bootcamp Parttime</a></li>
+            <li><a style="text-decoration: none; color: white;" href="https://codegym.vn/tong-hop-khoa-hoc-tai-codegym/?action=filter_courses&locations%5B%5D=online">Khóa học từ xa</a></li>
+            <li class="menu2_last_child">Khóa học miễn phí
+               <i class="menu1-icon ti-angle-right"></i>
+            <ul class="menu3">
+                <li><a style="text-decoration: none; color: white;" href="https://codegym.vn/khoa-hoc-nhap-mon-lap-trinh-voi-javascript/">Nhập môn lập trình</a></li>
+                <li><a style="text-decoration: none; color: white;" href="https://codegym.vn/khoa-hoc-html-css-mien-phi-cho-nguoi-moi-bat-dau/">Nhập môn HTML/CSS</a></li>
+                <li><a style="text-decoration: none; color: white;" href="https://pages.codegym.vn/khoa-hoc-nhap-mon-phan-tich-du-lieu-mien-phi/">Nhập môn Data Analyst</a></li>
+                <li><a style="text-decoration: none; color: white;" href="https://pages.codegym.vn/khoa-hoc-nhap-mon-phat-trien-game-mien-phi/">Nhập môn phát triển game</a></li>
+                <li><a style="text-decoration: none; color: white;" href="https://codegym.vn/khoa-hoc-bootstrap-mien-phi/">Nhập môn Bootstrap</a></li>
+                <li><a style="text-decoration: none; color: white;" href="https://codegym.vn/khoa-hoc-nhap-mon-git-va-github-mien-phi/">Nhập môn Git và Github</a></li>
+            </ul>
+        </li>
+    </ul>
+    </li>
+    <li class="menu1_first_child">Lịch khai giảng
+        <i class="menu1-icon ti-angle-down"></i>
+        <ul class="menu2">
+            <li><a style="text-decoration: none; color: white;" href="https://codegym.vn/lich-khai-giang/">Codegym Hà Nội</a></li>
+            <li><a style="text-decoration: none; color: white;" href="https://codegym.vn/lich-khai-giang-codegym-sai-gon/">Codegym Sài Gòn</a></li>
+            <li><a style="text-decoration: none; color: white;" href="https://codegym.vn/lich-khai-giang-codegym-online/">Codegym Online</a></li>
+            <li><a style="text-decoration: none; color: white;" href="https://codegym.vn/lich-khai-giang-codegym-da-nang/">Codegym Đà Nẵng</a></li>
+            <li><a style="text-decoration: none; color: white;" href="https://codegym.vn/lich-khai-giang-codegym-quang-tri/">Codegym Quảng Trị</a></li>
+            <li><a style="text-decoration: none; color: white;" href="https://codegym.vn/lich-khai-giang-codegym-hue/">Codegym Huế</a></li>
+    </ul>        
+    </li>       
+    <li class="menu1_first_child">kiến thức
+        <i class="menu1-icon ti-angle-down"></i>
+        <ul class="menu2">
+            <li><a style="text-decoration: none; color: white;" href="https://codegym.vn/blog/">Chia sẻ kiến thức</a></li>
+            <li><a style="text-decoration: none; color: white;" href="https://codegym.vn/tai-nguyen-hoc-lap-trinh/">Tài nguyên lập trình</a></li>
+    </ul>
+    </li>
+    <li><a style="text-decoration: none; color: white;" href="https://codegym.vn/tin-tuc-su-kien/">Tin tức</a></li>
+    <li class="menu1_first_child">Về Codegym
+        <i class="menu1-icon ti-angle-down"></i>
+        <ul class="menu2">
+            <li><a style="text-decoration: none; color: white;" href="https://codegym.vn/gioi-thieu-codegym/">Giới thiệu</a></li>
+            <li><a style="text-decoration: none; color: white;" href="https://codegym.vn/tai-sao-nen-chon-codegym/">Tại sao nên chọn Codegym</a></li>
+            <li><a style="text-decoration: none; color: white;" href="https://codegym.vn/mo-hinh-coding-bootcamp/">Mô hình Coding Bootcamp</a></li>
+            <li><a style="text-decoration: none; color: white;" href="https://codegym.vn/bao-chi-noi-ve-codegym/">Báo chí nói về Codegym</a></li>
+            <li><a style="text-decoration: none; color: white;" href="https://codegym.vn/cong-dong-dai-su-codegym/">Cộng đồng đại sứ</a></li>
+            <li><a style="text-decoration: none; color: white;" href="https://codegym.vn/doi-tac/">Đối tác</a></li>
+            <li><a style="text-decoration: none; color: white;" href="https://codegym.vn/category/emagazine/">Chân dung học viên</a></li>
+            <li><a style="text-decoration: none; color: white;" href="https://codegym.vn/category/hoat-dong-cong-dong/">Hoạt động cộng đồng</a></li>
+            <li><a style="text-decoration: none; color: white;" href="https://codegym.vn/lien-he-codegym/">Liên hệ</a></li>
+            <li><a style="text-decoration: none; color: white;" href="https://codegym.vn/tuyen-dung/">Tuyển dụng</a></li>
+            <li><a style="text-decoration: none; color: white;" href="https://codegym.vn/chuong-trinh-bao-tro-hoc-phi-codegym-rootopia/">Bảo trợ học phí</a></li>
+    </ul>
+    <li></li>
+    <i class="menu1-icon ti-search"></i>
+    </li>
+    </div>
+</div>
+</body>
+</html>
