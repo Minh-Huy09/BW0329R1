@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+}
+
+@media screen and (max-width:768px) {
+    .left {
+        padding: 5px;
+        width: 30%;
+        background-color: darkgray;
+        float: left;
+    }
+    
+    .content {
+        padding: 5px;
+        width: 70%;
+        float: left;
+    }
+}
+
+.head, .head-link, .head, .left, .right {
+    margin-bottom: 10px;
+}
+div.head {
+ background-color: rgb(216, 218, 223); 
+}
+
+div.head-link {
+    background-color: rgb(216, 218, 223);
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+
+.head-link-a {
+   text-align: center;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    clear: both;
+    height: 50px;
+    background-color: sienna;
+}
+
+.left-img > img {
+    width: 100%;
+}
+
+.left-container {
+    height: 500px;
+    overflow: auto;
+}
+
+/* RBW */
+@media screen and (min-width:768px){
+    .left {
+        padding: 5px;
+        width: 50%;
+        background-color: darkgray;
+        float: left;
+    }
+    .content {
+        padding: 5px;
+        width: 50%;
+        float: left;
+    }
+}
+
+/* Ipad */
+@media screen and (max-width:768px){
+    .left {
+        padding: 5px;
+        width: 50%;
+        background-color: darkgray;
+        float: left;
+    }
+    .content {
+        padding: 5px;
+        width: 50%;
+        float: left;
+    }
+}
+
+/* Dien thoai */
+@media screen and (max-width:576px){
+    .left {
+        padding: 5px;
+        width: 100%;
+        background-color: darkgray;
+        float: left;
+    }
+    .content {
+        padding: 5px;
+        width: 100%;
+        float: left;
+    }
+}
