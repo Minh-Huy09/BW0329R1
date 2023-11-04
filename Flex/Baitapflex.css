@@ -1,0 +1,89 @@
+* { 
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  html {
+      font-family: Arial, Helvetica, sans-serif;
+  }
+  .header {
+      height: 50px;
+      background-color: rgb(104, 81, 81);
+      position: fixed;
+      width: 100%;
+  }
+  .header p {
+      line-height: 50px;
+      text-align: center;
+  }
+  .header_1 {
+      height: 300px;
+      background-color: rgb(26, 69, 129);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  
+  }
+  .header_2 {
+     height: 80px;
+     background-color: rgb(153, 153, 35);
+     width: 300px;
+     padding: 10px;
+     text-align: center;
+     justify-content: center;
+  }
+  .link ul {
+      display: flex;
+      background-color: black;
+  }
+  .link ul li {
+      padding: 10px;
+      list-style-type: none;
+  }
+  .link ul li a {
+      text-decoration: none;
+      color: white;
+  }
+  .container {
+      height: 800px;
+      display: flex;
+      margin-left: 10px;
+      margin-right: 10px;
+      flex-wrap: wrap;
+  }
+
+  .aboutme {
+      background-color: antiquewhite;
+      flex: 30%;
+      padding:20px;
+  }
+  .aboutme-box {
+      height:200px;
+      background-color: rgb(150, 146, 146);
+      padding: 20px;
+      margin: 20px;
+  }
+  .titleheading {
+      flex: 70%;
+      background-color: rgb(74, 51, 100);
+      padding: 20px;
+  }
+  .footer {
+      background-color: rgb(82, 124, 160);
+      height: 80px;
+      width: 100%;
+      position: fixed;
+      bottom: 0;
+  }
+  .footer p {
+      line-height: 80px;
+      text-align: center;
+  }
+  @media screen and (max-width:768px) {
+      .aboutme {
+          flex: 100%;
+      }
+      .titleheading {
+          flex: 100%;
+      }
+  }
