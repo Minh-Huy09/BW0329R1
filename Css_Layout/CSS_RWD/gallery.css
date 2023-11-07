@@ -31,7 +31,6 @@ p {
 }
 @media screen and (max-width:500px){
     .image {
-        width: 100%;
-       
+        width: 100%;    
     } 
 }
