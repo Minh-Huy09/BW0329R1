@@ -1,0 +1,52 @@
+// // Variables: Biến trong SASS
+// $var_color: red;
+// //Mixin: Nhóm CSS
+// @mixin style_paragrap($varcolor) {
+//     font-size: 10px;
+//     color: $varcolor;
+//     font-family: Arial, Helvetica, sans-serif;
+// }
+// //Extend & Inheritance: Mở rộng và Kế thừa trong CSS
+// %stype_share {
+//     border-radius: 10px;
+//     background-color: rgb(97, 37, 37);
+// }
+// Nesting: CSS Selector
+@import'var.scss';
+.h1 {
+    background-color: $var_color;
+}
+
+.nav {
+    background-color: $var_color;
+    font-size: 30px;
+    ul {
+        color: gray;
+        font-family: Arial, Helvetica, sans-serif;
+        li {
+            padding: auto;
+            margin: 30px;
+            @include style_paragrap(green)
+        }
+    }
+}
+
+div {
+    border: 1px solid gray;
+    width: 200px;
+    height: 200px;
+    font-family: Arial, Helvetica, sans-serif;
+    @include style_paragrap(rgb(48, 120, 48))
+}
+
+.button1 {
+    width: 20px;
+    height: 30px;
+    @extend %stype_share;
+}
+
+.button2 {
+    width: 10px;
+    height: 10px;
+    @extend %stype_share;
+}

@@ -1,0 +1,203 @@
+/* @media screen and (max-width:768px) {
+    .justify-content {
+        padding: 0 20px;
+    }
+    .about-item {
+        width:  100%;
+    }
+    .music-items {
+        width: 100%;
+    }
+    .feedback-item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .team-items {
+        width: 100%;
+        margin-bottom: 100px;
+    }
+    .enjoy-items {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .footer-item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .enjoy {
+        width: 100%;
+        margin-bottom: 100px;
+    }
+} */
+
+@media screen and (max-width: 576px) {
+    .justify-content {
+        padding: 0px;
+    }
+    .artist-item {
+        width: 100%;
+    }
+    .artist .artist-item img {
+        width: 100%;
+        border-radius: 10px;
+    }
+    .about-item {
+        width: 100%;
+    }
+    .about-item h2 {
+        font-size: 30px;
+    }
+    
+    .section-title h2 {
+        font-size: 25px;
+    }
+
+    .section-title h2::before {
+        font-size: 25px;
+    }
+
+    .music-items {
+        width: 100%;
+    }
+    .feedback-item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .team-items {
+        width: 100%;
+        margin-bottom: 100px;
+    }
+    .enjoy-items {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .footer-item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (min-width:576px) and (max-width: 768px) {
+    .justify-content {
+        padding: 0 50px;
+    }
+
+    .section-title h2 {
+        font-size: 25px;
+    }
+
+    .section-title h2::before {
+        font-size: 25px;
+    }
+
+    .artist-item {
+        width: 100%;
+    }
+    .artist .artist-item img {
+        width: 100%;
+        border-radius: 10px;
+    }
+    .about-item {
+        width: 100%;
+    }
+    .about-item h2 {
+        font-size: 25px;
+    }
+    .music-items {
+        width: 100%;
+    }
+    .feedback-item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .team-items {
+        width: 100%;
+        margin-bottom: 100px;
+    }
+    .enjoy-items {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .footer-item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .justify-content {
+        padding: 0 50px;
+    }
+    .artist-tiem {
+        width: 100%;
+    }
+    .artist .artist-item img {
+        width: 100%;
+        border-radius: 10px;
+    }
+    .about-item {
+        width:  100%;
+    }
+    .music-items {
+        width: 100%;
+    }
+    .feedback-item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .team-items {
+        width: 100%;
+        margin-bottom: 100px;
+    }
+    .enjoy-items {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .footer-item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (min-width: 991px) {
+    .justify-content {
+        padding: 1px;
+    }
+    .artist-item {
+        width: 50%;
+    }
+    .artist .artist-item img {
+        width: 100%;
+        border-radius: 10px;
+        padding: 100px;
+        padding-top: 15px;
+    }   
+    .float-flex {
+        display: flex;
+    }
+    .about-item {
+        width: 50%;
+    }
+    .about-item h2 {
+        font-size: 35px;
+    }
+    .music-items {
+        width: 50%;
+    }
+    .feedback-item {
+        width: 30%;
+        margin-bottom: 20px;
+    }
+    .team-items {
+        width: 33%;
+        margin-bottom: 100px;
+    }
+    .enjoy-items {
+        width: 33%;
+        margin-bottom: 10px;
+    }
+    .footer-item {
+        width: 33%;
+        margin-bottom: 20px;
+    }
+}

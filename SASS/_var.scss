@@ -1,0 +1,14 @@
+// Variables: Biến trong SASS
+$var_color: red;
+//Mixin: Nhóm CSS
+@mixin style_paragrap($varcolor) {
+    font-size: 10px;
+    color: $varcolor;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+//Extend & Inheritance: Mở rộng và Kế thừa trong CSS
+%stype_share {
+    border-radius: 10px;
+    background-color: rgb(97, 37, 37);
+}
