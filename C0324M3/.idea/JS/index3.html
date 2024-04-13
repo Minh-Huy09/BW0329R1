@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="name" placeholder="Name"> 
+    <button onclick="getData()">Nhập</button>
+    <h3 id="kq"></h3>
+    <script>
+
+        function getData() {
+            let valueInput = document.getElementById("name").value;
+            document.getElementById("kq").innerHTML = valueInput;
+        }
+
+        // **CACH 1**
+        // let a = prompt("Hãy nhập dữ liệu: ") //Hello C03
+        // alert(a);
+    </script>
+</body>
+</html>
