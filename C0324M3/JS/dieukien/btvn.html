@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- cau 1 -->
+    <script>
+        let a = 10;
+        let b = 5;
+        if (a % b === 0) {
+            console.log(a + " chia hết cho " + b);
+        } else {
+            console.log(a + " không chia hết cho " + b);
+        }
+
+        // cau 2 
+       let tuoi = prompt("Nhập tuổi của học sinh:");
+
+        if (tuoi >= 15) {
+            console.log("Học sinh đủ điều kiện để vào lớp 10.");
+        } else {
+            console.log("Học sinh không đủ điều kiện để vào lớp 10.");
+        }
+        // cau 3
+        let soNguyen = prompt("Nhập một số nguyên bất kỳ:");
+
+        if (soNguyen > 0) {
+            console.log("Số " + soNguyen + " là số lớn hơn 0.");
+        } else if (soNguyen < 0) {
+            console.log("Số " + soNguyen + " là số nhỏ hơn 0.");
+        } else {
+            console.log("Số " + soNguyen + " bằng 0.");
+        }
+        // cau 4
+        let soThuNhat = parseInt(prompt("Nhập số nguyên thứ nhất:"));
+        let soThuHai = parseInt(prompt("Nhập số nguyên thứ hai:"));
+        let soThuBa = parseInt(prompt("Nhập số nguyên thứ ba:"));
+
+        let max = soThuNhat;
+
+        if (soThuHai > max) {
+            max = soThuHai;
+        }
+
+        if (soThuBa > max) {
+            max = soThuBa;
+        }
+
+        console.log("Giá trị lớn nhất trong ba số là: " + max);
+        // cau 5
+
+        let diemBaiKT = parseFloat(prompt("Nhập điểm bài kiểm tra:"));
+        let diemGiuaKy = parseFloat(prompt("Nhập điểm thi giữa kỳ:"));
+        let diemCuoiKy = parseFloat(prompt("Nhập điểm thi cuối kỳ:"));
+
+
+        let diemTrungBinh = (diemBaiKT + diemGiuaKy + diemCuoiKy) / 3;
+
+
+        let xepHang = "";
+
+        if (diemTrungBinh >= 8.5) {
+            xepHang = "Xuất sắc";
+        } else if (diemTrungBinh >= 7) {
+            xepHang = "Giỏi";
+        } else if (diemTrungBinh >= 5.5) {
+            xepHang = "Khá";
+        } else if (diemTrungBinh >= 4) {
+            xepHang = "Trung bình";
+        } else {
+            xepHang = "Yếu";
+        }
+
+
+        console.log("Điểm trung bình của học sinh là: " + diemTrungBinh.toFixed(2));
+        console.log("Xếp hạng học lực của học sinh là: " + xepHang);
+    </script>
+</body>
+</html>
