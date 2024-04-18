@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       //1
+       var celsiusValue = 20; 
+var fahrenheitValue = (celsiusValue * 9/5) + 32;
+console.log(fahrenheitValue + "°F");
+//2
+var meters = 10; 
+var feet = meters * 3.28084;
+console.log(feet + " feet");
+//3
+var a = 5; 
+var s = a * a;
+console.log("Diện tích của hình vuông là: " + s);
+//4
+var length = 10; 
+var width = 5; 
+var area = length * width;
+console.log("Diện tích của hình chữ nhật là: " + area);
+//5
+var a1 = 10; 
+var b1 = 5; 
+let s1=(a1*b1)/2;
+console.log("Diện tích của hình chữ nhật là: " + s1);
+//6
+var a2 = 2; // Thay thế giá trị này bằng hệ số a của phương trình
+var b2 = -6; // Thay thế giá trị này bằng hệ số b của phương trình
+
+if (2 !== 0) {
+    var x = -b2 / a2;
+    console.log("Nghiệm của phương trình là: " + x);
+} else {
+    if (b2 !== 0) {
+        console.log("Phương trình không có nghiệm.");
+    } else {
+        console.log("Phương trình có vô số nghiệm.");
+    }
+}
+//7
+var a3 = 1; // Thay thế giá trị này bằng hệ số a của phương trình
+var b3 = -3; // Thay thế giá trị này bằng hệ số b của phương trình
+var c3 = 2; // Thay thế giá trị này bằng hệ số c của phương trình
+
+var delta = b3 * b3 - 4 * a3 * c3;
+
+if (delta > 0) {
+    var x1 = (-b3 + Math.sqrt(delta)) / (2 * a3);
+    var x2 = (-b3 - Math.sqrt(delta)) / (2 * a3);
+    console.log("Phương trình có hai nghiệm phân biệt:");
+    console.log("x1 = " + x1);
+    console.log("x2 = " + x2);
+} else if (delta === 0) {
+    var x = -b3 / (2 * a3);
+    console.log("Phương trình có một nghiệm kép:");
+    console.log("x = " + x);
+} else {
+    console.log("Phương trình không có nghiệm thực.");
+}
+//8
+var number = 50; 
+
+if (number > 0 && number < 120) {
+    console.log(number + " la so tuoi");
+} else {
+    console.log(number + "khong la so tuoi");
+}
+//9
+var side1 = 3; // Thay thế giá trị này bằng độ dài của cạnh thứ nhất
+var side2 = 4; // Thay thế giá trị này bằng độ dài của cạnh thứ hai
+var side3 = 5; // Thay thế giá trị này bằng độ dài của cạnh thứ ba
+
+if (side1 + side2 > side3 && side1 + side3 > side2 && side2 + side3 > side1&&side1>0 &&side2>0 &&side3>0) {
+    console.log("Ba số này có thể là độ dài của các cạnh của một tam giác.");
+} else {
+    console.log("Ba số này không thể là độ dài của các cạnh của một tam giác.");
+}
+
+
+
+
+
+    </script>
+</body>
+</html>
