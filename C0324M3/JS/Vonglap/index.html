@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Vong lap: lap lai 1 doan code nhieu lan => ngan code
+        // In ra 1000 dong h1: Hello
+
+        let dem = 0;
+        while (dem < 10) {
+            document.write('<h1>Hello</h1>');
+            dem = dem+1;// dem ++;; // dem+=1;
+        }
+
+        for (let dem = 0; dem < 100; dem++) {
+            document.write('<h1>'+dem+'</h1>')
+        }
+
+        for (let i = 0; i < 10; i++) {
+            document.write('<h1>HI' + i + 'HI</h1>')
+        }
+
+        for (let dem = 1; dem <= 100; dem++) {
+        if(dem % 5 === 0)
+            document.write("<h1>"+dem+"</h1>");
+        }
+
+        let a = +prompt("Nhập a:");
+        let b = +prompt("Nhập b:");
+        for (let dem = a; dem <= b; dem++) {
+        if(dem % 5 === 0){
+            document.write("<h1>"+dem+"</h1>");
+        }
+
+        let tich = 1 ;
+        for (let i = a; i <= b ; i++){
+        tich = tich * i ;
+            document.write('<h1>'+tich+'</h1>');
+        }
+    }
+        // C1
+        //while(Dieu kien de lap A(C2)){
+        //   A
+        // C3
+        //   }   
+
+
+        // for(khoi tao bien dem;Dieu kien de lap;Tang giam bien dem) {
+        //   A
+        // }
+
+        //In ra các số từ 0 đến 100
+    </script>
+</body>
+</html>

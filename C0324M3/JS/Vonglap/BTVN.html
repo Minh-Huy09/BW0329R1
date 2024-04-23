@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- BT in ra tổng các số chia hết cho 6 từ a đến b -->
+    <script>
+        let C = +prompt("Nhập a: ");
+        let D = +prompt("Nhập b: ");
+        for (let dem = C; dem < D; dem++) {
+            if (dem % 6 === 0) {
+                document.write('<h1>' + dem + ' </h1>')
+            }
+        }
+    </script>
+
+    <!-- *BT in ra các tích số chẵn và chia hết cho 5 từ a đến b -->
+    <script>
+        let E = +prompt("Nhập a: ");
+        let F  = +prompt("Nhập b: ");
+        for (let dem = E; dem < F; dem++) {
+            if (dem % 2 === 0 && dem % 5 === 0) {
+                document.write('<h1>' + dem + ' </h1>')
+            }
+        }
+    </script>
+
+    <!-- *BT in ra số lượng các số > 10 và chia hết cho 3 từ a đến b -->
+    <script>
+        let G = +prompt("Nhập a: ");
+        let H = +prompt("Nhập b: ");
+        for (let dem = G; dem < H; dem++) {
+            if (dem > 10 && dem % 3 === 0) {
+                document.write('<h1>' + dem + ' </h1>')
+            }
+        }
+    </script>
+</body>
+</html>

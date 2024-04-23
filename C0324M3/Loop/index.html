@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // for (let i = 0; i < 10; i++) { // i = 10 (10 < 10)
+        //     console.log(i); // 0 1 2... 9
+        // }
+        
+        // //B1: Khoi tao bien dem
+        // //B2: Kiem tra dieu kien, neu true thi den buoc tiep theo, con false thi dung vong lap
+        // //B3: Khối lệnh thực thi
+        // //B4: Tăng(hoặc giảm) biến đếm
+        // //B5: Quay trở lại bước 2
+
+
+        // // fori + tab
+        // for (let i = 0; i < 10; i++) {
+        //     console.log(i);
+        //     if(i === 5) {
+        //         break; //Khi gặp từ khóa break thì sẽ lập tức dừng vòng lặp
+        //     }
+        // }
+
+        // for (let i = 0; i < 10; i++) {
+        //     if(i % 2 === 0) {
+        //         continue; //Khi gặp từ khóa continue sẽ bỏ qua vòng lặp hiện tại và đi đến vòng lặp tiếp theo
+        //     }
+        //     console.log(i);
+        // }
+
+        //Kiểu dữ liệu: là kiểu của giá đại diện cho 1 biến đang sử dụng
+        //Number (0, 0.1, -1); string ('Hello', 'Huy') ; boolean (true, false); object
+        // let a = false;
+        // console.log(typeof 3);
+
+        // let i  = 0;
+        // while (i < 10) {
+        //     console.log(i);
+        //     i++;
+        // }
+
+        // let i = 0;
+        // do {
+        //     console.log(i);
+        //     i++;
+        // } while (i < -1); //Vòng lặp do while sẽ thực thi ít nhất 1 lần dù đúng hay sai
+
+        // for (let i = 1; i < 5; i++) { //i = 2 ( 2 <= 5)
+        //     for (let j = 1; j <= 10; j++) { // j = 1 (1 <=10)
+        //         console.log("Hello World");
+        //     }
+        // }
+
+        // // Bài tập in ra bảng cửu chương 5; (5 * 1 = 5; 5 * 2 = 10;... 5 * 10 = 50)
+        // for (let i = 1; i <= 10; i++) {
+        //     let tich = 5 * 1;
+        //     console.log(5 + " * " + i + " = " + tich);
+        // }
+
+        // In bảng cửu chương
+        for (let i = 1; i <= 10; i++) {
+            for (let j = 1; j <= 10; j++) {
+                let tich = i * j;
+                console.log(i + " * " + j + " = " + tich);
+            }
+        }
+    </script>
+</body>
+</html> 
