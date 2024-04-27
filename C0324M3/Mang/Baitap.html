@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        // *Bai tap 1 (In ra các phần tử > 20)
+        const mang = [10, 25, 15, 30, 5, 40]
+        for (let i = 0; i < mang.length; i++) {
+            if (mang[i] > 20) {
+                console.log(mang[i]);
+            }
+        }
+        
+        //Bai tap 2 (Tính tích các phần tử chẵn)
+        const phantu = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+        let tich = 1;
+        for (let i = 0; i < phantu.length; i++) {
+            if (phantu[i] % 2 === 0) {
+                tich *= phantu[i];
+            }
+        }
+        console.log("Tích của các phần tử chẵn trong mảng là:", tich);
+
+        //Bai tap 3 (Tính trung bình cộng các phần tử lẻ)
+        const tbc = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+        let tong = 0;
+        let dem = 0;
+        for (let i = 0; i < tbc.length; i++) {
+            if (tbc[i] % 2 !== 0) {
+                tong += tbc[i];
+                dem++;
+            }
+        }
+        const trungbinhcong = tong / dem;
+        console.log("Trung bình cộng của các phần tử lẻ trong mảng là:", trungbinhcong);
+
+        //Bai tap 4 (TÌm max)
+        const lonnhat = [10, 25, 15, 30, 5, 40];
+        let max = lonnhat[0];
+        for (let i = 1; i < lonnhat.length; i++) {
+            if (lonnhat[i] > max) {
+                max = lonnhat[i];
+            }
+        }
+        console.log("Giá trị lớn nhất là:", max);
+
+        //Bai tap 5 (Nhập vào X, tìm vị trí của x trong mảng)
+        //x = 23 => 1,1
+        //x =15 => 3, 2
+
+        const m = [
+            [10, 25, 15],
+            [30, 5, 40],
+            [23, 8, 12],
+        ];
+        function timvitri(X, m) {
+            for (let i = 0; i < m.length; i++) {
+                for (let j = 0; j < m[i].length; j++) {
+                    if (m[i][j] === X) {
+                        return [i + 1, j + 1];
+                    }
+                }
+            }
+            return "Không tìm thấy";
+        }
+        const X = prompt("Nhập giá trị X:");
+        const Vitri = timvitri(parseInt(X), m);
+        console.log("Vị trí của X trong mảng là:", timvitri);
+    </script>
+</body>
+</html>
