@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Hàm: 1 biến có thể chứa code bên tromg4
+    Khi dùng hàm thì code bên trong sẽ chạy
+    ưu điểm: Dùng nhiều lần
+    function ten (x, y, z) {
+        A
+        return t;
+        x, y, z: đầu vào
+        t: Đầu ra
+        A: đoạn code xử lý đầu vào để có đầu ra
+    } -->
+<script>
+    // function ABC() {
+    //     for (let i = 0; i < 1000; i++) {
+    //         document.write(i+'<br>');
+    //     }
+    // }
+    // ABC();
+    // document.write('<hr>')
+    
+    function in5du2(a, b) {
+        for (let i = a; i <= b; i++) {
+            if (i%5 == 2) {
+                document.write(i+'<br>');
+            }
+        }
+        return a + b;
+    }
+    
+
+    function b2(xx) {
+        xx += 1;
+        return xx;
+    }
+
+    // **Viết hàm nhận vào 3 số nguyên bất kì, trả về số nguyên có giá trị nhỏ nhất
+    function b3 (q, w, e) {
+        let min = q;
+        if (min > w) {
+            min = w;
+        }
+        if (min > e) {
+            min = e;
+        }
+        return min;
+    }
+    alert(b3(11, 21, 9))
+</script>
+</body>
+</html>

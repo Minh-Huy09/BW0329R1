@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<!-- <input type="text" id="a" value="Abc">
+<button onclick="getData">Nhấn</button>
+<h1 id="kq"></h1>
+<img src="" alt="" id="anh">
+<a href="" id="link">Nhấn</a> -->
+<!-- <div id="kq">
+    <h5>1. Hello</h5>
+    <h5>2. Hello</h5>
+    <h5>3. Hello</h5>
+    <h5>4. Hello</h5>
+    <h5>5. Hello</h5>
+</div> 
+<p id="max"></p> -->
+<h2 id="dis"></h2>
+<input type="text" id="so">
+<button onclick="them()">Them</button>
+<button onclick="dem">Dem</button>
+<h3 id="kq"></h3>
+    <script>
+
+    // // <!-- **BT1: CÁCH KHAI BÁO BIẾN -->
+    // // <!-- let, var, const: Từ khóa để khai báo biến -->
+    // let a = 10;
+    // let b = 20;
+    // let c = "Hello";
+    // const PI = 3.14;
+
+    // // **BT2: CÓ MẤY KIỂU DỮ LIỆU
+    // // number (0; 1; 1,4; 2...), string( 'Huy', "Huy", ), boolean (true/false), object
+    // let isSick = true;
+    // let obj = {
+    //     name:"Lê Minh Huy"
+    // }
+    // let d = null; // Không có gì
+    // let e = undefined;// Không xác định
+    // console.log(typeof d);
+
+    // // **BT3: LÀM SAO ĐỂ QUY ĐỊNH KIỂU DỮ LIỆU CHO 1 BIẾN
+    // // Xác định dựa trên dữ liệu cuối cùng mà biến đó sử dụng
+    // let name = "Minh Huy";
+    // name = 1; 
+    // console.log(typeof name);
+
+    // // **BT4: Có những cách nào để hiển thị chữ Hello ra
+    // // alert("Hello");
+    // // document.write("Hello");
+    // // document.getElementById("kq").innerHTML = "Huy is handsome"
+    // // console.log("Hello");
+
+    // // **BT5: Có cách nào để nhập vào biến a
+    // // let = prompt("Nhập vào đi:")
+    // // document.write(a);
+    // function getData() {// Như 1 hành động tự định nghĩa và sẽ được gọi khi người dùng thực hiện 1 hành động nào đó trên HTML
+    //     let name = document.getElementById("a").value;
+    //     document.write(name);
+    // }
+    
+    // **BT6: in ra thẻ h1, img, a với JS
+    // document.getElementById("anh").src ="https://www.google.com/url?sa=i&url=https%3A%2F%2Fvi.wikipedia.org%2Fwiki%2FH1ghr_Music&psig=AOvVaw3v8dWhiE1LwVJkYyJNvgaX&ust=1714737820771000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCJDPqar27oUDFQAAAAAdAAAAABAE";
+    // document.getElementById("link").href = "https://www.google.com/url?sa=i&url=https%3A%2F%2Fvi.wikipedia.org%2Fwiki%2FH1ghr_Music&psig=AOvVaw3v8dWhiE1LwVJkYyJNvgaX&ust=1714737820771000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCJDPqar27oUDFQAAAAAdAAAAABAE";
+    // // **BT7: Nhập vào tên, in ra tên
+    
+    // // **BT8: Nhập vào a, in ra bình phương của a
+    // let a = +prompt("Nhập a: ")
+    // console.log(a * a);
+    // console.log(Match.pow(a, 2));
+    // // **BT9: Nhập vào tên, in ra tên với h1
+    
+    //BT10: Nhập vào đường dẫn cho biến src, in ra ảnh với nguồn ảnh là biến src
+    // function getData() {
+    //     let link = document.getElementById("a").value;
+    //     document.getElementById("anh").src = link;
+    // }
+
+    // **BT11: Nhập vào tuổi trong biến age, in ra 'Đủ tuổi' nếu age > 18
+    // let age = +prompt('Nhập tuổi ');
+    // if(age > 18) {
+    //     alert("Đủ tuổi");
+    // }
+    
+    // **BT12: Nhập vào a, in ra "Hello" nếu a chẵn, "Hi" nếu a lẻ
+    // let a = +prompt("Nhập vào số: ");
+    // if(a % 2 === 0) {
+    //     alert("Hello");
+    // } else {
+    //     alert("Hi");
+    // }
+
+    // **BT13: NHẬP VÀO A, B. NẾU A > B IN RA TỔNG, NẾU A < B IN RA TÍCH, NẾU A = B IN RA 'HIHI'
+    // let a = +prompt("Nhập a: ")
+    // let b = +prompt("Nhập b: ")
+    // if(a > b) {
+    //     let tong = a + b;
+    //     alert("Tong la: " + tong);
+    // } else if (a < b) {
+    //     let tich = a * b;
+    //     alert("Tich la: " + tich);
+    // } else if (a === b) {
+    //     alert("Hi hi");
+    // }
+
+    // **BT14: NHẬP A,B,C. IN RA SỐ LỚN NHẤT
+    // let a = +prompt("Nhập a");
+    // let b = +prompt("Nhập b");
+    // let c = +prompt("Nhập c");
+    // let max = a;
+    // if(max < b) {
+    //     max = b;
+    // }
+    // if(max < c) {
+    //     max = c;
+    // }
+    // alert("Số lớn nhất là : " + max);
+
+    // *BT15: In ra 100 chữ 'Hello'
+    // let n = +prompt("Nhập vào n: ")
+    // for (let i = 0; i < 100; i ++) {
+    //     console.log("Hello");
+    // }
+
+    // **BT16: Nhập vào N từ prompt. In ra N lần chữ 'Hello'
+    // let n = +prompt("Nhập vào n: ")
+    // let html = '';
+    // for (let i = 1; i <= n; i ++) {
+    //     html = html + '<h5>' + i + '.Hello' + '</h5>'
+    // }
+    // document.getElementById("kq").innerHTML = html;
+    
+    // // **BT17: In ra cac số từ 1 đến 1000;
+    // for (var i = 1; i <= 1000; i++) {
+    // console.log(i);
+    // }
+
+    // **BT18: In ra cac số từ a đến b;
+//     function printNumbers(a, b) {
+//     for (var i = a; i <= b; i++) {
+//         console.log(i);
+//     }
+// }
+
+//     // Gọi hàm và truyền giá trị cho a và b
+//     var a = parseInt(prompt("Nhập số đầu tiên (a):"));
+//     var b = parseInt(prompt("Nhập số cuối cùng (b):"));
+
+//     printNumbers(a, b);
+
+    // **BT19: In ra cac số từ a đến b, mỗi số trong 1 thẻ <h1>;
+    //     function printNumbersInHeading(a, b) {
+    // for (var i = a; i <= b; i++) {
+    //     document.write("<h1>" + i + "</h1>");
+    // }
+    // }
+
+    // // Gọi hàm và truyền giá trị cho a và b
+    // var a = parseInt(prompt("Nhập số đầu tiên (a):"));
+    // var b = parseInt(prompt("Nhập số cuối cùng (b):"));
+
+    // printNumbersInHeading(a, b);
+
+    // **BT20: In ra các số chẵn tu a đến b;
+    //    function printNumbersInHeading(a, b) {
+    //      for (var i = a; i <= b; i++) {
+    //      document.write("<h1>" + i + "</h1>");
+    //     }
+    // }
+
+    // Gọi hàm và truyền giá trị cho a và b
+    // var a = parseInt(prompt("Nhập số đầu tiên (a):"));
+    // var b = parseInt(prompt("Nhập số cuối cùng (b):"));
+
+    // printNumbersInHeading(a, b);
+
+    // **BT21: In ra các số từ a đến b số chẵn trong h2, so le trong h1;
+//     function printNumbersWithTags(a, b) {
+//     for (var i = a; i <= b; i++) {
+//         if (i % 2 === 0) {
+//             document.write("<h2>" + i + "</h2>");
+//         } else {
+//             document.write("<h1>" + i + "</h1>");
+//         }
+//     }
+// }
+
+//     // Gọi hàm và truyền giá trị cho a và b
+//     var a = parseInt(prompt("Nhập số đầu tiên (a):"));
+//     var b = parseInt(prompt("Nhập số cuối cùng (b):"));
+
+//     printNumbersWithTags(a, b);
+
+    // **BT22: Tính tích, Tính Tổng các số chia 5 dư 2 từ a đến b.
+//     function calculateSumAndProduct(a, b) {
+//     var sum = 0;
+//     var product = 1;
+//     for (var i = a; i <= b; i++) {
+//         if (i % 5 === 2) {
+//             sum += i;
+//             product *= i;
+//         }
+//     }
+//     console.log("Tổng các số chia 5 dư 2 từ " + a + " đến " + b + " là: " + sum);
+//     console.log("Tích các số chia 5 dư 2 từ " + a + " đến " + b + " là: " + product);
+// }
+
+//     // Gọi hàm và truyền giá trị cho a và b
+//     var a = parseInt(prompt("Nhập số đầu tiên (a):"));
+//     var b = parseInt(prompt("Nhập số cuối cùng (b):"));
+
+//     calculateSumAndProduct(a, b);
+
+    // **BT23: Đếm các số chia 5 dư 2 từ a đến b
+//     function countNumbers(a, b) {
+//     var count = 0;
+//     for (var i = a; i <= b; i++) {
+//         if (i % 5 === 2) {
+//             count++;
+//         }
+//     }
+//     console.log("Số lượng các số chia 5 dư 2 từ " + a + " đến " + b + " là: " + count);
+// }
+
+//     // Gọi hàm và truyền giá trị cho a và b
+//     var a = parseInt(prompt("Nhập số đầu tiên (a):"));
+//     var b = parseInt(prompt("Nhập số cuối cùng (b):"));
+
+//     countNumbers(a, b);
+
+    // **BT24: In ra các phần tử trong mảng
+//     function printArrayElements(arr) {
+//     for (var i = 0; i < arr.length; i++) {
+//         console.log(arr[i]);
+//     }
+// }
+
+//     // Mảng ví dụ
+//     var myArray = [1, 2, 3, 4, 5];
+
+//     // Gọi hàm và truyền mảng vào để in ra các phần tử
+//     printArrayElements(myArray);
+
+    // **BT25: In ra các phần tử chẵn trong mảng;
+//     function printEvenElements(arr) {
+//     for (var i = 0; i < arr.length; i++) {
+//         if (arr[i] % 2 === 0) {
+//             console.log(arr[i]);
+//         }
+//     }
+// }
+
+//     // Mảng ví dụ
+//     var myArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+//     // Gọi hàm và truyền mảng vào để in ra các phần tử chẵn
+//     printEvenElements(myArray);
+
+    // **BT26: In ra các phần số chẵn trong h2, le trong h1;
+//     function printElementsWithTags(arr) {
+//     for (var i = 0; i < arr.length; i++) {
+//         if (arr[i] % 2 === 0) {
+//             document.write("<h2>" + arr[i] + "</h2>");
+//         } else {
+//             document.write("<h1>" + arr[i] + "</h1>");
+//         }
+//     }
+// }
+
+//     // Mảng ví dụ
+//     var myArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+//     // Gọi hàm và truyền mảng vào để in ra các phần tử
+//     printElementsWithTags(myArray);
+
+    // **BT27: Tính tích các phần tử.
+//     function calculateProduct(arr) {
+//     var product = 1;
+//     for (var i = 0; i < arr.length; i++) {
+//         product *= arr[i];
+//     }
+//     return product;
+// }
+//     // Mảng ví dụ
+//     var myArray = [1, 2, 3, 4, 5];
+
+//     // Gọi hàm và truyền mảng vào để tính tích các phần tử
+//     var result = calculateProduct(myArray);
+//     console.log("Tích của các phần tử trong mảng là: " + result);
+
+    // **BT28: Tính tích các phần tử chẵn
+//     function calculateEvenProduct(arr) {
+//     var product = 1;
+//     for (var i = 0; i < arr.length; i++) {
+//         if (arr[i] % 2 === 0) {
+//             product *= arr[i];
+//         }
+//     }
+//     return product;
+// }
+
+//     // Mảng ví dụ
+//     var myArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+//     // Gọi hàm và truyền mảng vào để tính tích các phần tử chẵn
+//     var result = calculateEvenProduct(myArray);
+//     console.log("Tích của các phần tử chẵn trong mảng là: " + result);
+
+    // **BT29: Tính Tổng các phần tử.
+//     function calculateSum(arr) {
+//     var sum = 0;
+//     for (var i = 0; i < arr.length; i++) {
+//         sum += arr[i];
+//     }
+//     return sum;
+// }
+
+//     // Mảng ví dụ
+//     var myArray = [1, 2, 3, 4, 5];
+
+//     // Gọi hàm và truyền mảng vào để tính tổng các phần tử
+//     var result = calculateSum(myArray);
+//     console.log("Tổng của các phần tử trong mảng là: " + result);
+
+    // **BT30: Tính Tổng các phần tử chẵn
+//     function calculateEvenSum(arr) {
+//     var sum = 0;
+//     for (var i = 0; i < arr.length; i++) {
+//         if (arr[i] % 2 === 0) {
+//             sum += arr[i];
+//         }
+//     }
+//     return sum;
+// }
+
+//     // Mảng ví dụ
+//     var myArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+//     // Gọi hàm và truyền mảng vào để tính tổng các phần tử chẵn
+//     var result = calculateEvenSum(myArray);
+//     console.log("Tổng của các phần tử chẵn trong mảng là: " + result);
+
+    // **BT31: Tìm max trong mảng.
+//     function findMax(arr) {
+//     var max = arr[0]; // Giả sử phần tử đầu tiên là max
+//     for (var i = 1; i < arr.length; i++) {
+//         if (arr[i] > max) {
+//             max = arr[i]; // Nếu phần tử hiện tại lớn hơn max, gán lại max bằng phần tử hiện tại
+//         }
+//     }
+//     return max;
+// }
+
+//     // Mảng ví dụ
+//     var myArray = [3, 7, 2, 8, 5];
+
+//     // Gọi hàm và truyền mảng vào để tìm giá trị lớn nhất
+//     var maxValue = findMax(myArray);
+//     console.log("Giá trị lớn nhất trong mảng là: " + maxValue);
+
+    // **BT32: Tìm max của các phần tử chẵn trong mảng
+//     function findMax(arr) {
+//     var max = arr[0]; // Giả sử phần tử đầu tiên là max
+//     for (var i = 1; i < arr.length; i++) {
+//         if (arr[i] > max) {
+//             max = arr[i]; // Nếu phần tử hiện tại lớn hơn max, gán lại max bằng phần tử hiện tại
+//         }
+//     }
+//     return max;
+// }
+
+//     // Mảng ví dụ
+//     var myArray = [3, 7, 2, 8, 5];
+
+//     // Gọi hàm và truyền mảng vào để tìm giá trị lớn nhất
+//     var maxValue = findMax(myArray);
+//     console.log("Giá trị lớn nhất trong mảng là: " + maxValue);
+
+    // **BT33: Đếm có  bao nhiêu phần tử chia 5 dư 2 trong mảng
+//     function countNumbers(arr) {
+//     var count = 0;
+//     for (var i = 0; i < arr.length; i++) {
+//         if (arr[i] % 5 === 2) {
+//             count++;
+//         }
+//     }
+//     return count;
+// }
+
+//     // Mảng ví dụ
+//     var myArray = [3, 7, 2, 8, 5, 10, 6, 12, 17, 22];
+
+//     // Gọi hàm và truyền mảng vào để đếm số lượng phần tử chia 5 dư 2
+//     var result = countNumbers(myArray);
+//     console.log("Số lượng phần tử chia 5 dư 2 trong mảng là: " + result);
+
+    // **BT34: Nhap vào a, đếm số lượng a trong mảng.
+//     function countOccurrences(arr, value) {
+//     var count = 0;
+//     for (var i = 0; i < arr.length; i++) {
+//         if (arr[i] === value) {
+//             count++;
+//         }
+//     }
+//     return count;
+// }
+
+//     // Mảng ví dụ
+//     var myArray = [1, 3, 5, 3, 2, 3, 4, 3];
+
+//     // Nhập giá trị a từ người dùng
+//     var a = parseInt(prompt("Nhập giá trị a:"));
+
+//     // Gọi hàm và truyền mảng và giá trị a vào để đếm số lần xuất hiện của a trong mảng
+//     var result = countOccurrences(myArray, a);
+//     console.log("Số lượng phần tử " + a + " trong mảng là: " + result);
+
+    // **BT35: Nhap vao a, tim vi tri cua a trong mảng.
+    let arr = [];
+    function them() {
+        let pt = +document.getElementById('so').value;
+        arr.push(pt)
+        let str = '';
+        for (let i = 0; i < arr.length; i++) {
+            str + arr[i]+'<br>'
+        }
+        document.getElementById('dis').inertHTML = str;
+        document.getElementById('so').value = '';
+    }
+
+    function dem() {
+        let d = 0;
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] % 5 == 2) {
+                d++;
+            }
+        }
+        document.getElementById('kq').innerHTML = d;
+    }
+    </script>
+</body>
+</html>
