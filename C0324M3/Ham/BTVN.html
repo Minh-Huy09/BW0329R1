@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //         Bài 1: Viết hàm trả về bình phương của một số bất kỳ được đưa vào. Gọi hàm vừa xây dựng được.
+      function binhPhuong(a) {
+        return a * a;
+      }
+      const a = +prompt("Nhập số cần tính bình phương: ");
+      const ketQua = binhPhuong(a);
+      console.log(`Bình phương của ${a} là: ${ketQua}`);
+
+      // Bài 2: Viết hàm trả về diện tích, hàm tính chu vi hình tròn của bán kính được đưa vào. Gọi hàm vừa xây dựng được
+      function tinhDienTich(banKinh) {
+        return Math.PI * banKinh * banKinh;
+      }
+
+      function tinhChuVi(banKinh) {
+        return 2 * Math.PI * banKinh;
+      }
+
+      const banKinh = +prompt("Nhập bán kính hình tròn: ");
+
+      const dienTich = tinhDienTich(banKinh);
+      const chuVi = tinhChuVi(banKinh);
+
+      console.log(`Diện tích hình tròn là: ${dienTich.toFixed(2)}`);
+      console.log(`Chu vi hình tròn là: ${chuVi.toFixed(2)}`);
+
+      // Bài 3: Viết hàm trả về giai thừa của một số nguyên bất kỳ được đưa vào. Gọi hàm vừa xây dựng được.
+      function tinhGiaiThua(n) {
+        if (n < 0) {
+          return -1;
+        } else if (n === 0) {
+          return 1;
+        } else {
+          return n * tinhGiaiThua(n - 1);
+        }
+      }
+
+      const n = parseInt(prompt("Nhập số nguyên dương cần tính giai thừa: "));
+
+      const giaiThua = tinhGiaiThua(n);
+
+      if (giaiThua === -1) {
+        console.log(`${n} không phải là số nguyên dương!`);
+      } else {
+        console.log(`Giai thừa của ${n} là: ${giaiThua}`);
+      }
+
+      // Bài 4: Viết hàm nhận vào 3 số nguyên bất kỳ, trả về tổng 3 số.
+      function tinhTong(a1, b, c) {
+        return a1 + b + c;
+      }
+
+      const a1 = parseInt(prompt("Nhập số nguyên thứ nhất: "));
+      const b = parseInt(prompt("Nhập số nguyên thứ hai: "));
+      const c = parseInt(prompt("Nhập số nguyên thứ ba: "));
+
+      const tong = tinhTong(a, b, c);
+      console.log(`Tổng của ${a1}, ${b} và ${c} là: ${tong}`);
+
+      // Bài 5: Viết hàm nhận vào một số, kiểm tra xem nếu số đưa vào có phải là nguyên dương không. Nếu là nguyên dương trả về true, ngược lại trả về false.
+      function kiemTraNguyenDuong(so) {
+        if (typeof so !== "number" || isNaN(so)) {
+          return false;
+        } else if (so < 0) {
+          return false;
+        } else {
+          return true;
+        }
+      }
+
+      const so = parseFloat(prompt("Nhập số cần kiểm tra: "));
+
+      const ketQua1 = kiemTraNguyenDuong(so);
+
+      if (ketQua1) {
+        console.log(`${so} là số nguyên dương.`);
+      } else {
+        console.log(`${so} không phải là số nguyên dương.`);
+      }
+
+      // Bài 6: Viết hàm nhận vào 1 mảng, trả về tổng các số > 10
+      function tinhTongSoLonHon10(mangSo) {
+        if (!Array.isArray(mangSo) || mangSo.length === 0) {
+          return 0;
+        }
+
+        let tong = 0;
+        for (const so of mangSo) {
+          if (so > 10) {
+            tong += so;
+          }
+        }
+        return tong;
+      }
+      const mangSo = [5, 2, 4, 6, 13, -1, 8, 11];
+      const tong1 = tinhTongSoLonHon10(mangSo);
+      console.log(`Tổng các số lớn hơn 10 trong mảng là: ${tong1}`);
+
+      // Bài 7: Viết hàm nhận vào 1 mảng, trả về số lượng các số > 10
+      function demSoLonHon10(mangSo1) {
+        if (!Array.isArray(mangSo1) || mangSo1.length === 0) {
+          return 0;
+        }
+
+        let dem = 0;
+        for (const so of mangSo1) {
+          if (so > 10) {
+            dem++;
+          }
+        }
+        return dem;
+      }
+
+      const mangSo1 = [5, 2, 4, 6, 13, -1, 8, 11];
+      const soLuong = demSoLonHon10(mangSo1);
+      console.log(`Số lượng số lớn hơn 10 trong mảng là: ${soLuong}`);
+
+      // Bài 8: Viết hàm nhận vào 1 mảng, trả TBC các số > 10. (Phải dùng các hàm đã tạo ở bài 6 và 7)
+      function tinhTBCSoLonHon10(mangSo3) {
+        const soLuong = demSoLonHon10(mangSo3);
+        if (soLuong === 0) {
+          return 0;
+        }
+
+        const tong = tinhTongSoLonHon10(mangSo3);
+        const tbc = tong / soLuong;
+        return tbc;
+      }
+
+      // Gọi hàm
+      const mangSo3 = [5, 2, 4, 6, 13, -1, 8, 11];
+      const tbc = tinhTBCSoLonHon10(mangSo);
+      console.log(`Trung bình cộng các số lớn hơn 10 trong mảng là: ${tbc}`);
+    </script>
+  </body>
+</html>
