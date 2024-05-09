@@ -7,29 +7,32 @@
 </head>
 <body>
     <img src="Anime.jpg" alt="" style="width: 100px; position: absolute; top: 100px; left: 200px;" id="Itachi">
-    <!-- <button onclick="sangPhai()">Sang Phai</button>
-    <button onclick="sangTrai()">Sang Trai</button>
-    <button onclick="lenTren()">Len Tren</button>
-    <button onclick="xuongDuoi()">Xuong Duoi</button> -->
     <script>
+        let w = 3
+        let h = 0
+        let itachi = document.getElementById('Itachi')
+        setInterval(() => {
+            Itachi.style.left = parseInt(Itachi.style.left) + w + "px"
+            Itachi.style.top = parseInt(Itachi.style.top) + h + 'px'
+            if ( parseInt(Itachi.style.left)>= window.innerWidth - Itachi.width) {
+                Itachi.style.left = '0px';
+            }
+        }, 10)
         function sangPhai() {
-            let Itachi = document.getElementById('Itachi');
-            Itachi.style.left = parseInt(Itachi.style.left) + 20 + 'px'
+            w = 3;
+            h = 0;
         }
-
         function sangTrai() {
-            let Itachi = document.getElementById('Itachi');
-            Itachi.style.left = parseInt(Itachi.style.left) - 20 + 'px'
+            w = -3;
+            h = 0;
         }
-
         function lenTren() {
-            let Itachi = document.getElementById('Itachi');
-            Itachi.style.top = parseInt(Itachi.style.top) - 20 + 'px'
+            w = 0;
+            h = -3;
         }
-
         function xuongDuoi() {
-            let Itachi = document.getElementById('Itachi');
-            Itachi.style.top = parseInt(Itachi.style.top) + 20 + 'px'
+            w = 0;
+            h = 3;
         }
         window.addEventListener('keydown', (e) => {
             console.log(e.key)
@@ -46,8 +49,6 @@
                 xuongDuoi();
             }
         })
-
-
     </script>
 </body>
 </html>

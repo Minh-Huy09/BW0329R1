@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!-- //BÀI TẬP 1: DI CHUYỂN THÀNH 1 HÌNH CHỮ NHẬT -->
+<img src="Anime.jpg" alt="" style="width: 100px; position: absolute; top: 0px; left: 0px;" id="v">
+    <!-- <button onclick="sangPhai()">Sang Phai</button>
+    <button onclick="sangTrai()">Sang Trai</button>
+    <button onclick="lenTren()">Len Tren</button>
+    <button onclick="xuongDuoi()">Xuong Duoi</button> -->
+    <script>
+        let v = 20;
+        let v2 = 20;
+        function sangPhai() {
+            let Itachi = document.getElementById('v');
+            Itachi.style.left = parseInt(Itachi.style.left) + v + 'px';
+            let viTri = parseInt(Itachi.style.left);
+            let viTriTop = parseInt(Itachi.style.top);
+
+            if(viTri > window.innerWidth - Itachi.width && viTriTop >= 0) { //Góc Top - Right (2)
+                v = 0;
+                v2 = 20;
+                Itachi.style.top = viTriTop + v2 + 'px';
+        }
+            if(parseInt(Itachi.style.top) > window.innerHeight - Itachi.height) { // Góc Bot - right (3)
+                v2 = 0;
+                v = -20;
+        }
+
+            if(parseInt(Itachi.style.left) <= 0 && parseInt(Itachi.style.top) >= 0) { // Góc Bot - Left (4)
+                v = 0;
+                v2 = -20;
+                Itachi.style.top = viTriTop + v2 + 'px';
+        }
+
+            if(parseInt(Itachi.style.left) <= 0 && parseInt(Itachi.style.top) <= 0) { // Góc Top - Left (1)
+                v = 20;
+                v2 = 0;
+        }
+    }
+
+    setInterval(function () {
+        sangPhai();
+    }, 100) //1s = 1000
+        
+
+
+
+        // function sangTrai() {
+        //     let Itachi = document.getElementById('v');
+        //     Itachi.style.left = parseInt(Itachi.style.left) - Math.random()*100 + 'px'
+        // }
+
+        // function lenTren() {
+        //     let Itachi = document.getElementById('v');
+        //     Itachi.style.top = parseInt(Itachi.style.top) - Math.random()*100 + 'px'
+        // }
+
+        // function xuongDuoi() {
+        //     let Itachi = document.getElementById('v');
+        //     Itachi.style.top = parseInt(Itachi.style.top) + Math.random()*100 + 'px'
+        // }
+        
+        
+        
+
+    </script>
+</body>
+</html>
