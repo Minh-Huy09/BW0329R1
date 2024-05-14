@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" placeholder="Nhập số lượng sản phẩm" id="sl">
+    <button onclick="createProduct()">Tạo danh sách sản phầm</button>
+    <button onclick="showListProduct()">Hiển thị danh sách sản phẩm</button>
+    <button onclick="addProduct()">Thêm danh sách sản phẩm</button>
+    <br>
+    <div id="display"></div>
+</body>
+<script>
+    let listProduct = []
+
+    function createProduct() {
+        let s1 = document.getElementById('sl').value
+        for (let i = 0; i <= s1 ; i++) {
+            let nameProduct = prompt(`Nhập tên sản phẩm thứ: ${i}`)
+            let priceProduct = prompt(`Nhập giá sản phẩm thứ: ${i}`)
+            listProduct.push({name: nameProduct, price: priceProduct})
+            console.log(listProduct)
+        }
+        showListProduct()
+    }
+
+    function showListProduct() {
+        let str = `<h2>Danh sách sản phẩm</h2>`
+        str += `<h3>Số lượng sản phẩm: ${listProduct.length}</h3>`
+        for (let i = 0; i < listProduct.length; i++) {
+            str += `<p>Tên sản phẩm: ${listProduct[i].name} Giá: ${listProduct[i].price}<button onclick="edit(${[i]})">Sửa</button></p>`
+        }
+        document.getElementById('display').innerHTML = str
+    }
+
+    function addProduct() {
+        let str = `<input type="text" id="name" placeholder="Nhập tên sản phẩm"> <br>
+        <input type="number" id="price" placeholder="Nhập giá sản phẩm">
+        <button onclick="add()">Thêm</button>`
+        document.getElementById('display').innerHTML = str
+    }
+
+    function add() {
+        let nameSpNew = document.getElementById('name').value
+        let priceSpNew = document.getElementById('price').value
+        let SpNew = {
+            name: nameSpNew,
+            price: priceSpNew
+        };
+        listProduct.push(SpNew);
+        showListProduct()
+    }
+
+    function edit(item) {
+        let str = `<input type="text" id="editName" value="${listProduct[item].name}"> <br>
+        <input type="number" id="editPrice" value="${listProduct[item].price}">
+        <button onclick="save(${[item]})">Lưu</button> </br>`
+        document.getElementById('display').innerHTML = str
+    }
+
+    function save(item) {
+        listProduct[item].name = document.getElementById('editName').value
+        listProduct[item].price = document.getElementById('editPrice').value
+        showListProduct()
+    }
+</script>
+</html>
