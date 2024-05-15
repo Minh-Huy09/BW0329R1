@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let sp = {
+        //     name: 'AAAA',
+        //     price: 30,
+        //     quantity: 100
+        // }
+        // // alert(sp.name);
+
+        // let list = [
+        //     {
+        //         name: 'AAAA',
+        //         price: 50,
+        //         quantity: 100
+        //     },
+        //     {
+        //         name: 'BBB',
+        //         price: 60,
+        //         quantity: 100
+        //     },
+        //     {
+        //         name: 'CCC',
+        //         price: 70,
+        //         quantity: 100
+        //     }
+        // ];
+        
+        // for (let i = 0; i < list.length; i++) {
+        //     if (list[i].price >=60) {
+        //         document.write(list[i].name + ', ' + list[i].price + '<br>')
+        //     }
+        // }
+
+        //Bài tập: Tạo 1 mảng có các học sinh: tên, điểm, lớp
+        //1. In ra toàn bộ học sinh
+        //2. In ra học sinh có điểm cao nhất
+        //3. In ra các học sinh học lớp: 'C03'
+
+        let students = [
+            {
+                ten: 'A',
+                diem: 10,
+                lop: 'C03'
+            },
+            {
+                ten: 'B',
+                diem: 8,
+                lop: 'C03'
+            },
+            {
+                ten: 'C',
+                diem: 9,
+                lop: 'C04'
+            }
+        ]
+        for(let i = 0; i < students.length; i++) {
+            document.write(`1. ${students[i].ten}, ${students[i].diem}, ${students[i].lop} <br> `)
+        }
+        let max = students[0];
+        for(let i = 0; i < students.length; i++) {
+            if (max.diem < students[i].diem) {
+                max = students[i];
+            }
+        }
+        document.write(`2. ${max.ten}, ${max.diem}, ${max.lop} <br> `)
+        for (let i = 0; i < students.length; i++) {
+            if (students[i].lop == 'C03') {
+
+                document.write(`1. ${students[i].ten}, ${students[i].diem}, ${students[i].lop} <br> `)
+            }          
+        }
+        
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    let obj = {
+        id: 1,
+        name: 'A',
+        age: 20,
+        class: {
+            id: 1,
+            name: 'C03',
+            amounts: '29'
+        },
+        getI4() {
+            alert('Thong tin hoc sinh : '+this.name);
+        }
+    }
+    alert(obj.class.name);
+    obj.getI4()
+</script>
+</body>
+</html>
