@@ -1,4 +1,4 @@
-let myStore = new Store("Cua hang cua H1ghr Music");
+let myStore = new Store("Cua hang cua Linh");
 function showHome() {
     document.getElementById("main").innerHTML = `
      <table border="1">
@@ -7,6 +7,7 @@ function showHome() {
             <td>Name</td>
             <td>Price</td>
             <td>Image</td>
+            <th colspan="2">Action</th>
         </tr>
         <tbody id="listProduct">
 
@@ -21,11 +22,47 @@ function showHome() {
             <td>${list[i].id}</td>
             <td>${list[i].name}</td>
             <td>${list[i].price}</td>
-            <td><img src="${list[i].image}" alt=""></td>
+            <td><img class="my-img" src="${list[i].image}" alt=""></td>
+            <td><button onclick="removeProduct(${i})">Delete</button></td>
+            <td><button onclick="showFormUpdate(${i})">Update</button></td>
         </tr>
         `
     }
     document.getElementById("listProduct").innerHTML = html;
+}
+
+
+function showFormUpdate(index) {
+    let list = myStore.listProduct;
+    let oldProduct = list[index];
+    console.log(oldProduct);
+    document.getElementById("main").innerHTML = `
+    <input type="text" id="id" placeholder="Id" value="${oldProduct.id}">
+    <input type="text" id="name" placeholder="Name" value="${oldProduct.name}">
+    <input type="text" id="price" placeholder="Price" value="${oldProduct.price}">
+    <input type="text" id="image" placeholder="Image" value="${oldProduct.image}">
+    <button onclick="update(${index})">Update</button>
+    `;
+}
+
+function update(index) {
+    let id = document.getElementById("id").value;
+    let name = document.getElementById("name").value;
+    let price = document.getElementById("price").value;
+    let image = document.getElementById("image").value;
+    let newProduct = new Product(id, name, price, image);
+    myStore.update(index, newProduct);
+    showHome();
+}
+
+
+
+function removeProduct(index) {
+    let isConfirm = confirm("Bạn chắc chắn chứ?");
+    if(isConfirm) {
+        myStore.remove(index);
+        showHome();
+    }
 }
 
 function showFormAdd() {
@@ -47,3 +84,5 @@ function add() {
     myStore.add(newProduct);
     showHome();
 }
+
+showHome();
