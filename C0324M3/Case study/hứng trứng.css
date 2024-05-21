@@ -1,0 +1,127 @@
+body {
+    font-family: "Times New Roman", Times, serif;
+    background-image: url("img/trung1.png.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgb(158, 144, 144);
+}
+
+#catcher {
+    position: absolute;
+    bottom: 10px;
+    left: calc(50% - 50px);
+    width: 100px;
+    height: 20px;
+    background-color: #333;
+    border-radius: 5px;
+}
+
+.egg {
+    position: absolute;
+    width: 80px;
+    height: 100px;
+    background-image: url("img/trung2.png.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#startScreen {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+h1 {
+    width: 100%;
+    font-size: 80px;
+    color: #5e6bc2;
+}
+
+p {
+    font-size: 30px;
+    color: #5e6bc2;
+}
+
+.cards {
+    position: absolute;
+    left: 28%;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.card {
+    width: 100px;
+    height: 50px;
+    border-radius: 12px;
+    background-color: #5e6bc2;
+    transition: all 0.2s linear;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.card:hover>.card:not(:hover) {
+    filter: blur(20px);
+}
+
+#score {
+    font-size: 25px;
+    color: white;
+}
+
+#lives {
+    font-size: 20px;
+    color: white;
+}
+
+#gameover {
+    position: absolute;
+    float: left;
+    font-size: 25px;
+}
+
+#gameover button {
+    border-radius: 10px;
+    width: 100px;
+    font-size: 25px;
+    text-align: center;
+}
+
+.over {
+    left: 40%;
+    position: absolute;
+    display: inline;
+    text-align: center;
+}
+
+.over p {
+    font-size: 50px;
+}
+
+.cards1 {
+    position: absolute;
+    left: 12%;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.card1 {
+    width: 100px;
+    height: 50px;
+    border-radius: 12px;
+    background-color: #646a8f;
+    transition: all 0.2s linear;
+}
+
+.card1:hover {
+    transform: scale(1.1);
+}
+
+.card1:hover>.card1:not(:hover) {
+    filter: blur(50px);
+}
