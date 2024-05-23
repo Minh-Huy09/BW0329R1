@@ -2,11 +2,11 @@ const catcher = document.getElementById("catcher");
 const scoreDisplay = document.getElementById("score");
 const livesDisplay = document.getElementById("lives");
 const gameOverDisplay = document.getElementById("gameOver");
-const finalScoreDisplay = document.getElementById("finalScore"); // Thêm phần tử HTML mới
+const finalScoreDisplay = document.getElementById("finalScore"); 
 let score = 0;
 let catcherX = window.innerWidth / 2 - 50;
 let missed = 0;
-let lives = 3; // Khởi tạo số mạng
+let lives = 3; 
 let eggSpeed;
 let gameLoop;
 let gameOver = false;
@@ -17,9 +17,9 @@ function startGame(speed) {
   eggSpeed = speed;
   missed = 0;
   score = 0;
-  lives = 3; // Đặt lại số mạng
+  lives = 3; 
   updateScore();
-  updateLives(); // Cập nhật số mạng hiển thị
+  updateLives();
   gameLoop = setInterval(createEgg, eggSpeed);
   gameOver = false;
 }
@@ -73,8 +73,8 @@ function createEgg() {
       } else if (eggRect.bottom >= window.innerHeight) {
         clearInterval(fallInterval);
         egg.remove();
-        lives--; // Giảm số mạng khi bỏ lỡ trứng
-        updateLives(); // Cập nhật hiển thị số mạng
+        lives--; 
+        updateLives(); 
         missed++;
         if (missed >= 3) {
           endGame();
@@ -96,6 +96,6 @@ function updateLives() {
 function endGame() {
   clearInterval(gameLoop);
   gameOverDisplay.style.display = "block";
-  finalScoreDisplay.textContent = "Final Score: " + score; // Cập nhật điểm số cuối cùng
+  finalScoreDisplay.textContent = "Final Score: " + score; 
   gameOver = true;
 }
