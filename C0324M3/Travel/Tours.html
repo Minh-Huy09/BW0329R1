@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tours</title>
 
-<!-- font-awesome cdn link -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+
+    <!-- font-awesome cdn link -->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
      <!-- custom css file link -->
@@ -15,7 +17,7 @@
  <body>
  
  <!-- header section starts -->
- <header class="header">
+ <header class="header" data-aos="fade-down">
      <section class="flex">
          <a href="Home.html" class="logo">AOMG Travel</a>
          <nav class="navbar">
@@ -32,6 +34,62 @@
  <!-- header section ends -->
 
  <!-- tours section starts -->
+<div class="container tours">
+    <h1 class="heading" data-aos="zoom-out">popular places</h1>
+    <section class="grid">
 
+        <div class="box" data-aos="fade-up">
+            <div class="price"><i class="fas fa-dollar-sign"></i><span>1299</span></div>
+            <img src="img/pexels-nubikini-386025.jpg" class="image" alt="">
+            <h3 class="name">a wandering day</h3>
+            <p class="address">Seatle, U.S</p>
+            <a href="#" class="btn">send enquiry</a>
+        </div>
+
+        <div class="box" data-aos="fade-up">
+            <div class="price"><i class="fas fa-dollar-sign"></i><span>1400</span></div>
+            <img src="img/pexels-rakicevic-nenad-233369-1262304.jpg" class="image" alt="">
+            <h3 class="name">Fly kites together</h3>
+            <p class="address">Manchester City, U.K</p>
+            <a href="#" class="btn">send enquiry</a>
+        </div>
+
+        <div class="box" data-aos="zoom-in" data-aos-delay="400">
+            <p class="price"><i class="fas fa-dollar-sign"></i><span class="amout">1500</span></p>
+            <img src="img/pexels-vitor-gusmao-shimabukuro-1110669-2104044.jpg" alt="" class="image">
+            <h3 class="name">singing for the small corners of the streets</h3>
+            <p class="address">Paris, France</p>
+            <a href="#" class="btn">send enquiry</a>
+        </div>
+
+        <div class="box" data-aos="zoom-in" data-aos-delay="400">
+            <p class="price"><i class="fas fa-dollar-sign"></i><span class="amout">1997</span></p>
+            <img src="img/pexels-josh-hild-1270765-14701640.jpg" alt="" class="image">
+            <h3 class="name">explore caves</h3>
+            <p class="address">Lang Son, Viet Nam</p>
+            <a href="#" class="btn">send enquiry</a>
+        </div>
+
+        <div class="box" data-aos="zoom-in" data-aos-delay="400">
+            <p class="price"><i class="fas fa-dollar-sign"></i><span class="amout">1250</span></p>
+            <img src="img/pexels-mohamedelaminemsiouri-2108845.jpg" alt="" class="image">
+            <h3 class="name">life in the forest</h3>
+            <p class="address">Amazon, Brazil</p>
+            <a href="#" class="btn">send enquiry</a>
+        </div>
+
+        <div class="box" data-aos="zoom-in" data-aos-delay="400">
+            <p class="price"><i class="fas fa-dollar-sign"></i><span class="amout">4999</span></p>
+            <img src="img/pexels-mcraftpix-21014.jpg" alt="" class="image">
+            <h3 class="name">around the world</h3>
+            <p class="address">Milan, Italy</p>
+            <a href="#" class="btn">send enquiry</a>
+        </div>
+
+    </section>
+</div>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script src="Script.js"></script>
 
  <!-- tours section ends -->

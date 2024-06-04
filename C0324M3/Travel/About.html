@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
 
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+
      <!-- font-awesome cdn link -->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
@@ -15,7 +17,7 @@
  <body>
  
  <!-- header section starts -->
- <header class="header">
+ <header class="header" data-aos="fade-down">
      <section class="flex">
          <a href="Home.html" class="logo">AOMG Travel</a>
          <nav class="navbar">
@@ -33,10 +35,10 @@
  
 <!-- about section starts -->
 <div class="container about">
-    <h1 class="heading">about us</h1>
+    <h1 class="heading" data-aos="zoom-out">about us</h1>
     <section>
         <div class="details">
-            <div class="box">
+            <div class="box" data-aos="zoom-in">
                 <h3>Why choose us ?</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam voluptate accusantium repellat
                 aliquam esse odit commodi est cumque perferendis rem veritatis minus aliquid deletus eligendi.</p>
@@ -45,19 +47,19 @@
         </div>
 
         <div class="grid">
-            <div class="box">
+            <div class="box" data-aos="fade-up">
                 <img src="img/pexels-abhi31-13002684.jpg" alt="">
                 <h3>Easy Boookings</h3>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
 
-            <div class="box">
+            <div class="box" data-aos="fade-up" data-aos-delay="400">
                 <img src="img/pexels-hanuman-photo-studio-564865561-17752008.jpg" alt="">
                 <h3>Travel World</h3>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
         
-            <div class="box">
+            <div class="box" data-aos="fade-up" data-aos-delay="600">
                 <img src="img/pexels-sikunovruslan-9265965.jpg" alt="">
                 <h3>Enjoy Tours</h3>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -71,14 +73,15 @@
 
 <!-- reviews section starts -->
 <div class="container reviews">
-    <h1 class="heading">cilent's reviews</h1>
+    <h1 class="heading" data-aos="zoom-out">cilent's reviews</h1>
     <section class="grid">
-        <div class="box">
+
+        <div class="box" data-aos="fade-up">
             <img src="img/pexels-emrecan-2422741.jpg" alt="">
             <h3>Jay Park</h3>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde illo distinctio repellendus
             delectus dicta modi iure, quod numquam nesciunt aspernatur.</p>
-            <div class="start">
+            <div class="stars">
                <i class="fas fa-star"></i>
                <i class="fas fa-star"></i>
                <i class="fas fa-star"></i>
@@ -87,7 +90,7 @@
             </div>
         </div>
 
-        <div class="box">
+        <div class="box" data-aos="fade-up">
             <img src="img/pexels-wanderer-731217.jpg" alt="">
             <h3>Simon Dominic</h3>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde illo distinctio repellendus
@@ -101,7 +104,7 @@
             </div>
         </div>
 
-        <div class="box">
+        <div class="box" data-aos="fade-up">
             <img src="img/pexels-jakob-rosen-114876126-9737563.jpg" alt="">
             <h3>Loco</h3>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde illo distinctio repellendus
@@ -115,7 +118,7 @@
             </div>
         </div>
 
-        <div class="box">
+        <div class="box" data-aos="fade-up">
             <img src="img/pexels-rpnickson-2531237.jpg" alt="">
             <h3>Gray</h3>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde illo distinctio repellendus
@@ -129,7 +132,7 @@
             </div>
         </div>
 
-        <div class="box">
+        <div class="box" data-aos="fade-up">
             <img src="img/pexels-zhangkaiyv-2884573.jpg" alt="">
             <h3>Chachamalone</h3>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde illo distinctio repellendus
@@ -143,7 +146,7 @@
             </div>
         </div>
 
-        <div class="box">
+        <div class="box" data-aos="fade-up">
             <img src="img/pexels-brett-sayles-1299437.jpg" alt="">
             <h3>Woo Won Jae</h3>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde illo distinctio repellendus
@@ -179,7 +182,7 @@
  
  
  
- 
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
  
  <!-- custom js file link -->
  <script src="Script.js"></script>

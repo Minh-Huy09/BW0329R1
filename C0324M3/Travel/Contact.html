@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
 
-<!-- font-awesome cdn link -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+
+    <!-- font-awesome cdn link -->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
      <!-- custom css file link -->
@@ -15,7 +17,7 @@
  <body>
  
  <!-- header section starts -->
- <header class="header">
+ <header class="header" data-aos="fade-down">
      <section class="flex">
          <a href="Home.html" class="logo">AOMG Travel</a>
          <nav class="navbar">
@@ -28,5 +30,64 @@
          <div id="menu-btn" class="fas fa-bars"></div>
      </section>
  </header>
+
  
  <!-- header section ends -->
+
+ <!-- contact section starts -->
+
+ <div class="container contact">
+    <h1 class="heading" data-aos="zoom-out">contact us</h1>
+
+    <section>
+        <div class="row">
+            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d344306.
+            72800476203!2d-122.66945745157179!3d47.608705804985036!2m3!1f0!2f0!3f0!3m2!
+            1i1024!2i768!4f13.1!3m3!1m2!1s0x5490102c93e83355%3A0x102565466944d59a!2sSeattle
+            %2C%20Washington%2C%20Hoa%20K%E1%BB%B3!5e0!3m2!1svi!2s!4v1717246114459!5m2!1svi!2s
+            "allowfullscreen="" loading="lazy" referrerpolicy=
+            "no-referrer-when-downgrade" data-aos="flip-left"></iframe>
+
+            <form action="" method="post" data-aos="flip-right">
+                <h3>get in touch</h3>
+                <input type="text" name="name" required maxlength="50" placeholder="enter your name" class="box">
+                <input type="email" name="email" required maxlength="50" placeholder="enter your email" class="box">
+                <input type="number" name="number" required maxlength="10" min="0" max="9999999999" 
+                placeholder="enter your number" class="box">
+                <textarea name="message" class="box" required maxlength="1000" cols="30" rows="10"></textarea>
+                <input type="submit" value="send message" name="send" class="btn">
+            </form>
+        </div>
+
+        <div class="grid">
+            <div class="box" data-aos="fade-up">
+                <i class="fas fa-phone"></i>
+                <h3>phone number</h3>
+                <a href="tel:1234567890">>+123-456-7890</a>
+                <a href="tel:87654321">>+987-654-3210</a>
+            </div>
+
+            <div class="box" data-aos="fade-up">
+                <i class="fas fa-envelope"></i>
+                <h3>email address</h3>
+               <a href="mail:moresojuplease@gmail.com">moresojuplease@gmail.com</a>
+               <a href="mail:callmegray@gmail.com">callmegray@gmail.com</a>
+            </div>
+
+            <div class="box" data-aos="fade-up">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3>office address</h3>
+               <a href="#">flat no. 01, a-1, seatle, washington, America - 400104</a>
+            </div>
+
+        </div>
+
+        <div class="credit">
+            &copy; copyright @ 2024 by <span>mr. Jay Park</span> | all rights reserved
+        </div>
+    </section>
+ </div>
+
+ <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+ <script src="Script.js"></script>
+ 

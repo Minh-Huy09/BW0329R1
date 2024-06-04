@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Travel</title>
+    <title>Home</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
     
     <!-- font-awesome cdn link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
@@ -12,10 +14,10 @@
     <link rel="stylesheet" href="Style.css">
 
 </head>
-<body>
+<body style="overflow: hidden;">
 
 <!-- header section starts -->
-<header class="header">
+<header class="header" data-aos="fade-down">
     <section class="flex">
         <a href="Home.html" class="logo">AOMG Travel</a>
         <nav class="navbar">
@@ -33,8 +35,8 @@
 
 <!-- home section starts -->
 
-<div class="container home">
-    <section class="flex">
+<div class="container home" data-aos="zoom-out">
+    <section class="flex" data-aos="zoom-in" data-aos-delay="600"> 
         <form action="" method="post">
             <h3>Search Your Tour</h3>
             <p>Where to</p>
@@ -69,7 +71,7 @@
 
 
 
-
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
 <!-- custom js file link -->
 <script src="Script.js"></script>

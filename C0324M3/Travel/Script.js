@@ -13,3 +13,8 @@ document.querySelectorAll('input[type="number"]').forEach(inputNumber => {
         = inputNumber.value.slice(0, inputNumber.maxLength);
     };
 });
+
+AOS.init({
+    duration: 400,
+    delay: 200,
+});
