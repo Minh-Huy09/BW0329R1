@@ -111,8 +111,37 @@
     border: 1px black solid;
     width: 100%;
     height: 40px;
+    display: none;
 }
 p{
     /*margin: 50px;*/
     text-align: center;
+}
+
+@media only screen and (max-width: 1200px) {
+    body {
+        background: blue;
+    }
+
+    .main .left {
+        display: none;
+    }
+
+    .mid {
+        width: 75%;
+    }
+
+    .right {
+        width: 25%;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    body {
+        background: yellow;
+    }
+
+    .right {
+        display: none;
+    }
 }
