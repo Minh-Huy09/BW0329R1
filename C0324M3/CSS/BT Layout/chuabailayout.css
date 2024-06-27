@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.row {
+    width: 100%;
+}
+
+.header {
+    height: 90px;
+    display: flex;
+    gap: 5px
+}
+
+
+.main {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 10px;
+}
+
+.ads {
+    height: 200px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer {
+    height: 70px;
+    margin-top: 10px;
+}
+
+
+.header .logo {
+    width: 25%;
+    height: 100%;
+    border: 1px solid black;
+}
+
+
+.header .navigation {
+    width: 85%;
+    height: 100%;
+    border: 1px solid black;
+}
+
+
+.main .item {
+    width: 21%;
+    height: 140px;
+    background-color: pink;
+    border: 1px solid black;
+}
+
+.ads .box {
+    width: 30%;
+    height: 100%;
+    border: 1px solid black;
+}

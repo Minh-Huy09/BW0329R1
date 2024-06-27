@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background:blue;
+            animation: x 4s ;
+            animation-fill-mode: forwards;
+        }
+
+        .box1 {
+            width: 100px;
+            height: 100px;
+            opacity: 0;
+            background:red;
+            animation: x 4s ;
+            animation-delay: 4s;
+            animation-fill-mode: forwards;
+        }
+        @keyframes x {
+            0%{
+                opacity: 0;
+            }
+            
+            100%{
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="box1"></div>
+</body>
+</html>
