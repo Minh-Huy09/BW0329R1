@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box; 
+ }
+ .image {
+     float: left;
+ }
+ .galerry1 {
+     border: 1px solid rgb(177, 169, 169);
+ }
+ .galerry1:hover {
+     border: 1px solid black;
+ }
+ img {
+     width: 100%;    
+ }
+ p {
+     text-align: center;
+ }
+ 
+ 
+ @media screen and (min-width: 1200px) {
+     .image {
+       width: 25%;
+       padding: 5px;
+     }
+   }
+   
+   @media screen and (min-width: 900px) and (max-width: 1199px) {
+     .image {
+       width: 50%;
+       padding: 5px;
+     }
+   }
+   
+   @media screen and (max-width: 899px) {
+     .image {
+       width: 100%;
+       padding: 5px;
+     }
+   }
