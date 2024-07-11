@@ -57,3 +57,4 @@ arrStr.map(toUpper =>{
 })
 
 console.log("5. Mảng chứa các từ in hoa của mảng ["+arrStr+"] là: ["+newToUpperCaseStr+"]")
+
