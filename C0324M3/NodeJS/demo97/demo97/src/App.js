@@ -1,12 +1,14 @@
-// import logo from './logo.svg';
+import logo from './logo.svg';
 import './App.css';
+import Huy from "./Huy";
 import Demo from "./Demo";
+import DemoClass from "./DemoClass";
+import Tinhtoan from "./Baitap.js";
+
 
 function App() {
   return (
-    <>
-      <Demo></Demo>
-    </>
+      <Tinhtoan></Tinhtoan>
   );
 }
 
