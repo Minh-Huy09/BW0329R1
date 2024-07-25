@@ -13,7 +13,7 @@ function App() {
       {/*<HienMang />*/}
       {/*<TinhToan />*/}
       {/*  <Product />*/}
-        <TestLifeCycle />
+        <TestLifeCycle/>
     </>
   );
 }
