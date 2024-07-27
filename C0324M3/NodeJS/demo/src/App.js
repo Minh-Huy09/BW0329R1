@@ -5,6 +5,8 @@ import HienMang from "./component/HienMang";
 import TinhToan from "./component/TinhToan";
 import Product from "./component/Product";
 import TestLifeCycle from "./component/test_life_cycle";
+import {FComponent} from "./component/FComponent";
+import FProduct from './component/FProduct';
 
 function App() {
   return (
@@ -13,7 +15,9 @@ function App() {
       {/*<HienMang />*/}
       {/*<TinhToan />*/}
       {/*  <Product />*/}
-        <TestLifeCycle/>
+      {/* <TestLifeCycle/> */}
+      {/* <FComponent/> */}
+      <FProduct/>
     </>
   );
 }
