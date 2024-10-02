@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1727862253827,
+    "title": "Hello World",
+    "content": "<p>This is the first post about programming.</p>",
+    "createAt": "2024-10-02T09:44:13.827Z",
+    "username": "minhhuy123",
+    "status": "public"
+  },
+  {
+    "id": 1727867956486,
+    "title": "",
+    "content": "<p>This is the second post that discusses farewell.</p>",
+    "createAt": "2024-10-02T11:19:16.486Z",
+    "username": "minhhuy123",
+    "status": "public"
+  },
+  {
+    "id": 1727874800707,
+    "title": "Hello World",
+    "content": "<p>PSG</p>",
+    "createAt": "2024-10-02T13:13:20.707Z",
+    "username": "minhhuy123",
+    "status": "public"
+  },
+  {
+    "id": 1727874804730,
+    "title": "Hello World",
+    "content": "",
+    "createAt": "2024-10-02T13:13:24.730Z",
+    "username": "minhhuy123",
+    "status": "public"
+  }
+]
