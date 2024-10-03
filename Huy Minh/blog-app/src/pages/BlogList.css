@@ -1,31 +1,29 @@
-/* BlogList.css */
-
 .container {
-    padding: 20px; /* Thêm padding */
-    border-radius: 10px; /* Bo tròn góc cho container */
+    padding: 20px;
+    border-radius: 10px;
 }
 
 .card {
-    background-color: #495057; /* Màu nền cho card */
-    border: none; /* Bỏ viền */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Thêm bóng đổ cho card */
-    transition: transform 0.2s; /* Hiệu ứng chuyển đổi khi hover */
+    background-color: #495057;
+    border: none;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); 
+    transition: transform 0.2s;
 }
 
 .card:hover {
-    transform: translateY(-5px); /* Hiệu ứng nâng lên khi hover */
+    transform: translateY(-5px); 
 }
 
 .card-title {
-    color: #ffc107; /* Màu tiêu đề nổi bật */
+    color: #ffc107; 
 }
 
 .card .btn {
-    background-color: #007bff; /* Màu nền cho nút */
-    color: #ffffff; /* Màu chữ cho nút */
+    background-color: #007bff;
+    color: #ffffff; 
 }
 
 .card .btn:hover {
-    background-color: #0056b3; /* Màu nền khi hover */
-    color: #ffffff; /* Màu chữ khi hover */
+    background-color: #0056b3;
+    color: #ffffff;
 }
