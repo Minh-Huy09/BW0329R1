@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
-import './BlogList.css'; // Nhập tệp CSS cho BlogList
+import './BlogList.css';
 
 function BlogList() {
   const [blogs, setBlogs] = useState([]);
