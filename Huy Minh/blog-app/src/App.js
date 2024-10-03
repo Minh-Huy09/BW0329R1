@@ -6,11 +6,10 @@ import BlogList from './pages/BlogList';
 import BlogCreate from './pages/BlogCreate';
 import BlogDetail from './pages/BlogDetail';
 import BlogEdit from './pages/BlogEdit';
-import SearchResults from './pages/SearchResults'; // Import trang kết quả tìm kiếm
+import SearchResults from './pages/SearchResults';
 import Navbar from './components/Navbar';
 import './App.css'
 
-// HOC for Private Routes
 const PrivateRoute = ({ children }) => {
   const user = JSON.parse(localStorage.getItem('user'));
   return user ? children : <Navigate to="/login" />;
@@ -40,7 +39,7 @@ function App() {
           <Route path="/blogs/create" element={<PrivateRoute><BlogCreate /></PrivateRoute>} />
           <Route path="/blogs/:id" element={<PrivateRoute><BlogDetail /></PrivateRoute>} />
           <Route path="/blogs/edit/:id" element={<PrivateRoute><BlogEdit /></PrivateRoute>} />
-          <Route path="/blogs/search" element={<PrivateRoute><SearchResults /></PrivateRoute>} /> {/* Route cho kết quả tìm kiếm */}
+          <Route path="/blogs/search" element={<PrivateRoute><SearchResults /></PrivateRoute>} />
         </Routes>
       </Layout>
     </Router>
