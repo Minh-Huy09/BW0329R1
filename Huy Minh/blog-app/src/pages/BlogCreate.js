@@ -12,7 +12,6 @@ function BlogCreate() {
     const user = JSON.parse(localStorage.getItem('user'));
     try {
       await axios.post('http://localhost:5000/posts', { ...formData, username: user.username });
-      // Reset the form or navigate to another page after successful submission
       setFormData({ title: '', content: '', status: 'public' });
       alert('Blog created successfully!');
     } catch (err) {
