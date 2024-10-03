@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import { Link } from 'react-router-dom'; // Nhập Link để điều hướng đến trang đăng nhập
-import './Register.css'; // Nhập tệp CSS nếu cần
+import { Link } from 'react-router-dom';
+import './Register.css';
 
 function Register() {
   const [formData, setFormData] = useState({ username: '', password: '', dob: '', image: '' });
@@ -12,7 +12,6 @@ function Register() {
     try {
       const response = await axios.post('http://localhost:5000/register', formData);
       console.log(response.data);
-      // Có thể điều hướng về trang đăng nhập sau khi đăng ký thành công
     } catch (err) {
       setError(err.response.data.message);
     }
